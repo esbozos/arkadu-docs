@@ -15,8 +15,10 @@ hacerlo realidad.
 
 **Esto es en negrita - bold**
 
-`*cursiva con negritas*`
+**`cursiva con negritas`**
+
 _Google
+
 .. _Google: https://www.google.com/
 
 
