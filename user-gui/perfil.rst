@@ -8,3 +8,6 @@ Perfil de Usuario
 * Documentos
 
 Todo en un solo lugar.
+
+.. note:: 
+    Esto es una nota!!
