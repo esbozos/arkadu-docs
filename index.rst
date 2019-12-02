@@ -14,6 +14,7 @@ Welcome to Arkadu's documentation!
    user-gui/registro
    user-gui/acceso
    user-gui/policy
+   user-gui/perfil
 
 Indices and tables
 ==================
