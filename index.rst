@@ -11,7 +11,7 @@ Welcome to Arkadu's documentation!
    :caption: Contents:
 
    introduction/intro 
-
+   user-gui/registro
 
 Indices and tables
 ==================
