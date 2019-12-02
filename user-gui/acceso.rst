@@ -15,6 +15,7 @@ Seguro, Fácil y Rápido
 .. note::
     Cada código permanece encriptado en la base de datos con los algoritmos 
     más seguros. Y siempre estamos actualizando los esquemas de seguridad. 
+    
 
 =========================
 ¿A donde llega el código?
