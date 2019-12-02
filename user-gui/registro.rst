@@ -11,11 +11,11 @@ por el contrario, es tan fácil que no habrá excusa para .....
 |arkadulogo| Cuando buscas algo único y genial, cuentas con Arkadu para
 hacerlo realidad.
 
-```Este texto es italic - cursiva```
+`Este texto es italic - cursiva`
 
 **Esto es en negrita - bold**
 
-```** cursiva con negritas**```
+`** cursiva con negritas**`
 
 .. _Google: https://www.google.com/
 
