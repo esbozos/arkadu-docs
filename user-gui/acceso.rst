@@ -7,8 +7,14 @@ contraseña complicada, tampoco debe preocuparse porque otros puedan tomar contr
 de su cuenta, pues el token de acceso es único y solo funciona una vez. Además, 
 cada vez que alguien intenta ingresar en su cuenta, recibirá una notificación de acceso.
 
+
+
 Seguro, Fácil y Rápido
 ----------------------
+
+.. note::
+    Cada código permanece encriptado en la base de datos con los algoritmos 
+    más seguros. Y siempre estamos actualizando los esquemas de seguridad. 
 
 =========================
 ¿A donde llega el código?
@@ -21,7 +27,7 @@ Existen multiples opciones y sabores, puedes recibirlo a través de:
 * Whatsapp
 * Notificación PUSH en la App Móvil para Android y iOS.
 
-.. rubric:: Footnotes
+.. rubric:: Notas
 
 .. [#] En todos los casos recibiras un correo indicando la hora, lugar y dispositivo desde el
         el cual han solicitado el acceso. Puedes bloquearlo si no has sido tú. ;-)

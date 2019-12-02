@@ -19,10 +19,11 @@ hacerlo realidad.
 
 ref:Google
 
-{'Google': ('https://www.google.com', '_blank')}
+`Google`_. enlace al buscador
 
 referencia cruzada :doc:`acceso` para entender como funciona el código de acceso inteligente. 
 
+.. _Google: https://google.com.co
 .. |arkadulogo| image:: images/logo_arkadu.png
         :align: middle
         :alt: brand logo

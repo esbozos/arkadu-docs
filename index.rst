@@ -8,10 +8,11 @@ Welcome to Arkadu's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contenido:
 
    introduction/intro 
    user-gui/registro
+   user-gui/acceso
 
 Indices and tables
 ==================
