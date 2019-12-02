@@ -27,12 +27,9 @@ referencia cruzada :doc:`acceso` para entender como funciona el código de acces
 
 .. |Google| raw:: html
     <a href="https://google.com.co" target="_blank">Google</a>
-        :target: _blank
 
 .. |wikipedia| raw:: html
     <a href="https://wikipedia.org" target="_blank">Wikipedia</a>
-        :target: _blank
-
 
 .. |arkadulogo| image:: images/logo_arkadu.png
         :align: middle
