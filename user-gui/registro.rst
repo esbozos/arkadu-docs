@@ -24,6 +24,8 @@ ref:Google
 referencia cruzada :doc:`acceso` para entender como funciona el código de acceso inteligente. 
 
 .. _Google: https://google.com.co
+        :target: _blank
+
 .. |arkadulogo| image:: images/logo_arkadu.png
         :align: middle
         :alt: brand logo
