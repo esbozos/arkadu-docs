@@ -1,0 +1,6 @@
+{
+    "restructuredtext.confPath": "${workspaceFolder}",
+    "python.pythonPath": "/Users/nets/.envs/sphinx/bin/",
+    "python.venvPath": "/Users/nets/.envs/sphinx/",
+    "cSpell.language": "en,es-ES"
+}
