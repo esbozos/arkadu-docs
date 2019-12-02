@@ -15,8 +15,8 @@ hacerlo realidad.
 
 **Esto es en negrita - bold**
 
-`** cursiva con negritas**`
-
+`*cursiva con negritas*`
+_Google
 .. _Google: https://www.google.com/
 
 
@@ -24,4 +24,4 @@ hacerlo realidad.
 .. |arkadulogo| image:: images/logo_arkadu.png
         :align: middle
         :alt: brand logo
-        :size: 20
+        :width: 20
