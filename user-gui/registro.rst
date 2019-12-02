@@ -17,11 +17,11 @@ hacerlo realidad.
 
 **`cursiva con negritas`**
 
-_Google
+ref:Google
 
-.. _Google: https://www.google.com/
+{'Google': ('https://www.google.com', '_blank')}
 
-
+referencia cruzada :doc:`acceso` para entender como funciona el código de acceso inteligente. 
 
 .. |arkadulogo| image:: images/logo_arkadu.png
         :align: middle
