@@ -13,6 +13,7 @@ Welcome to Arkadu's documentation!
    introduction/intro 
    user-gui/registro
    user-gui/acceso
+   user-gui/policy
 
 Indices and tables
 ==================
