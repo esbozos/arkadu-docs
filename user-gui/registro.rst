@@ -19,12 +19,20 @@ hacerlo realidad.
 
 ref:Google
 
-`Google`_. enlace al buscador
+Enlace al buscador |Google|.
+
+También puedes consultar |wikipedia|
 
 referencia cruzada :doc:`acceso` para entender como funciona el código de acceso inteligente. 
 
-.. _Google link: https://google.com.co
+.. |Google| raw:: html
+    <a href="https://google.com.co" target="_blank">Google</a>
         :target: _blank
+
+.. |wikipedia| raw:: html
+    <a href="https://wikipedia.org" target="_blank">Wikipedia</a>
+        :target: _blank
+
 
 .. |arkadulogo| image:: images/logo_arkadu.png
         :align: middle
