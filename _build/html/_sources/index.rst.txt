@@ -10,7 +10,7 @@ Welcome to Arkadu's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   introduction/intro 
+   intro
 
 
 Indices and tables
