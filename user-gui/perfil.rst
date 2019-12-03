@@ -8,6 +8,7 @@ Es una herrramienta de consulta y apoyo  creada para facilitar a los usuarios el
       :align: middle
       :alt: pantalla de codigo de acceso
       :width: 600
+      
 =================
 Acceso al Sistema
 =================
