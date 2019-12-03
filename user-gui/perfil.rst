@@ -46,10 +46,6 @@ Todo en un solo lugar.
 
 
 .. |codigoacceso| image:: ../images/codigo_acceso.png
-      :width: 600
-      :aling: middle
-
-.. |arkadulogo| image:: images/logo_arkadu.png
       :align: middle
-      :alt: brand logo
-      :width: 20
+      :alt: pantalla de codigo de acceso
+      :width: 600
