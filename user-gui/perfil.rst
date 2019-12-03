@@ -3,7 +3,7 @@
 ******************
 Arkadu sistema 
 ******************
-Es una herrramienta de consulta y apoyo  creada para facilitar a los usuarios el manejo del sistema. Este manual de ususario señala nel ,paso a paso detalladamente de como registrar un anueva empresa , agragar direcciones , validar mi usuario,  realizar y registrar  nuevas declaraciones, hacer solicitudes de servicios y permisos , asi como conocer el estado de mis solicitudes en el sistema, programar citas , gestionar mis pagos , conocer mis deudas , con la finalidad de ejecutar con exito el proceso  y dar cumplimiento a nuestros compromisos de pago  a traves de la plataforma tecnologica  
+Es una herrramienta de consulta y apoyo  creada para facilitar a los usuarios el manejo del sistema. Es un  manual de  ususario donde se señala el paso a paso del uso del sistema , como por ejemplo  crear tu usuario, registrar una nueva empresa , agregar direcciones de empresas, tramitar mis licencias, gestionar mis citas de atencion ,realizar y registrar  nuevas declaraciones, hacer solicitudes de servicios y permisos , asi como conocer el estado de mis solicitudes en el sistema , gestionar mis pagos , conocer mis deudas y demas compromisos con el ente , todo  con la finalidad de brindarte el mejor servicio y que puedas ejecutar con exito todos los  procesos  para asi  dar cumplimiento a nuestros compromisos  a traves de la plataforma tecnologica  
 
 =================
 Acceso al Sistema
