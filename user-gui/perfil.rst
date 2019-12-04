@@ -10,16 +10,57 @@ Es una herrramienta de consulta y apoyo  creada para facilitar a los usuarios el
 Acceso al Sistema
 =================
 ingresa a la plataforma a traves de  https://losguayos.arkadu.com/login/ 
- Es un sistema de acceso dinámico y muy seguro, usted no debe recordar ninguna contraseña complicada, tampoco debe preocuparse porque otros puedan tomar control de su cuenta.
+Es un sistema de acceso dinámico y muy seguro, usted no debe recordar ninguna
+contraseña complicada, tampoco debe preocuparse porque otros puedan tomar 
+control de su cuenta.
 
-    Para solicitar el acceso al sistema debes ingresar la direccion de tu correo electronico preferiblemente el que usas actualmente ,luego presiona el boton de solicitar acceso ,ahora ve a tu bandeja de entrada y verifica que en pocos minutos recibiras el codigo de validacion necesario para poder  continuar  
+|inicio_ingreso|
+
+Para solicitar el acceso al sistema debes ingresar la direccion de tu 
+correo electronico preferiblemente el que usas actualmente ,luego presiona 
+el boton de solicitar acceso ,ahora ve a tu bandeja de entrada y verifica que 
+en pocos minutos recibiras el codigo de validacion necesario para poder 
+continuar.
+
+|inputemail|
+solicita el codigo 
+
+|codigo_acceso|
+
+|codigo_acceso_enviado|
+
+debe ingresar el codigo que acabas de recibir para poder continuar 
+
+|completar_datos|
+
+====================
+ingresar datos:
+====================
+
+  - nombres
+  - apellidos
+  - cedula de identidad
+  - fecha de nacimiento 
+  |al ingresar todos nuestros datos, procederemos a guardar .
+
+  |verificacion_numero_telefono|
+
+  te hemos enviado un msm con un numero de verificacion, por favor ingresalo 
+  para validar qu es tu numero de contacto, si no te llega el mensaje puedes
+   solicitar uno nuevo , tambien te damos la  opcion de cambiar tu numero de 
+   telefono si asi lo deseas , si te parece muy complicado puedes omitir este paso.
+
+   ====================
+     modulo de usuario
+   ====================
+
 
 ++++++++++++++++++++
 Perfil del Usuario
 ++++++++++++++++++++
 
-*Empresa
-*personales
+* Empresa
+* personales
 
 - Publico
 - Corporativo
@@ -41,8 +82,7 @@ Nuestros modulos fueron desarrollados pensando segun tus necesidades, completa p
 * Empresas
 * Documentos
 
-Todo en un solo lugar.
-|codigoacceso|
+Todo en un solo lugar. |codigoacceso|
 
 .. note:: 
     Esto es una nota!!
@@ -50,8 +90,35 @@ Todo en un solo lugar.
     ..notes::
     Para poder ingresar al sistema debe ingresar los datos de su direccion de correo electronico 
 
+|inicio_ingreso|
 
-.. |codigoacceso| image:: ./images/codigo_acceso.png
+.. |codigoacceso| image:: /images/codigo_acceso.png
       :align: middle
       :alt: pantalla de codigo de acceso
       :width: 600
+
+.. |inicio_ingreso| image:: /images/inicio_ingreso.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
+.. |inputemail| image:: /images/ingresar_correo.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
+.. |codigo acceso enviados| image:: /images/codigo_acceso_enviado.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
+.. |completar datos usuario| image:: /images/completar_datos.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
+.. |modulo de usuario| image:: /images/modulo_usuario.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
