@@ -22,15 +22,35 @@ el boton de solicitar acceso ,ahora ve a tu bandeja de entrada y verifica que
 en pocos minutos recibiras el codigo de validacion necesario para poder 
 continuar.
 
+
 |inputemail|
+
+.. |inputemail| image:: /images/ingresar_correo.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
 
 solicita el codigo 
 
+
+
 |codigo_acceso|
+
+.. |codigo acceso enviados| image:: /images/codigo_acceso_enviado.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
 
  |codigo_acceso_enviado|
 
 debe ingresar el codigo que acabas de recibir para poder continuar 
+
+.. |completar datos usuario| image:: /images/completar_datos.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
 
 |completar_datos|
 
@@ -48,6 +68,11 @@ ingresar datos:
   |verificacion_numero_telefono|
 
 
+.. |verificacion numero telefono| image:: /images/verificacion_numero_telefono.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
 
 
    te hemos enviado un MSM con un numero de verificacion, por favor ingresalo 
@@ -60,19 +85,21 @@ ingresar datos:
     Modulo de usuario
    ===================
 
-|verificacion_numero_telefono|
+.. |modulo de usuario| image:: /images/modulo_usuario.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
 
 
 
-++++++++++++++++++++
-Perfil del Usuario
-++++++++++++++++++++
 
-* Empresa
-* personales
-
-- Publico
-- Corporativo
+============================
+    Perfil del Usuario
+============================
+|* Empresa  | * Personal |
+============================
+|* Publico  | * corporativo|
+============================
 
 +++++++++++++++++++++++++
 Validacion para acceder
