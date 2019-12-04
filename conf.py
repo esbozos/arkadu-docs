@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Arkadu'
-copyright = '2019, Norman Torres'
+copyright = '2019, Arkadu SAS'
 author = 'Norman Torres'
 
 
