@@ -23,11 +23,12 @@ en pocos minutos recibiras el codigo de validacion necesario para poder
 continuar.
 
 |inputemail|
+
 solicita el codigo 
 
 |codigo_acceso|
 
-|codigo_acceso_enviado|
+ |codigo_acceso_enviado|
 
 debe ingresar el codigo que acabas de recibir para poder continuar 
 
@@ -41,18 +42,26 @@ ingresar datos:
   - apellidos
   - cedula de identidad
   - fecha de nacimiento 
-  |al ingresar todos nuestros datos, procederemos a guardar .
+
+   al ingresar todos nuestros datos, procederemos a guardar .
 
   |verificacion_numero_telefono|
 
-  te hemos enviado un msm con un numero de verificacion, por favor ingresalo 
-  para validar qu es tu numero de contacto, si no te llega el mensaje puedes
-   solicitar uno nuevo , tambien te damos la  opcion de cambiar tu numero de 
-   telefono si asi lo deseas , si te parece muy complicado puedes omitir este paso.
 
-   ====================
-     modulo de usuario
-   ====================
+
+
+   te hemos enviado un MSM con un numero de verificacion, por favor ingresalo 
+   para validar qu es tu numero de contacto, si no te llega el mensaje  puedes
+   solicitar uno nuevo , tambien te damos la  opcion de cambiar tu numero de 
+   telefono si asi lo deseas , si te parece muy complicado puedes omitir este paso. 
+ 
+
+   ===================
+    Modulo de usuario
+   ===================
+
+|verificacion_numero_telefono|
+
 
 
 ++++++++++++++++++++
