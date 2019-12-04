@@ -51,7 +51,7 @@ Todo en un solo lugar.
     Para poder ingresar al sistema debe ingresar los datos de su direccion de correo electronico 
 
 
-.. |codigoacceso| image:: /images/codigo_acceso.png
+.. |codigoacceso| image:: ./images/codigo_acceso.png
       :align: middle
       :alt: pantalla de codigo de acceso
       :width: 600
