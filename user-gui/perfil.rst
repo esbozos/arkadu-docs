@@ -5,10 +5,6 @@ Arkadu sistema
 ******************
 Es una herrramienta de consulta y apoyo  creada para facilitar a los usuarios el manejo del sistema. Es un  manual de  ususario donde se señala el paso a paso del uso del sistema , como por ejemplo  crear tu usuario, registrar una nueva empresa , agregar direcciones de empresas, tramitar mis licencias, gestionar mis citas de atencion ,realizar y registrar  nuevas declaraciones, hacer solicitudes de servicios y permisos , asi como conocer el estado de mis solicitudes en el sistema , gestionar mis pagos , conocer mis deudas y demas compromisos con el ente , todo  con la finalidad de brindarte el mejor servicio y que puedas ejecutar con exito todos los  procesos  para asi  dar cumplimiento a nuestros compromisos  a traves de la plataforma tecnologica  
 
-.. |codigoacceso| image:: /images/inicio_ingreso.png
-      :align: middle
-      :alt: pantalla de inicio de correo
-      :width: 600
 
 =================
 Acceso al Sistema
@@ -16,18 +12,7 @@ Acceso al Sistema
 ingresa a la plataforma a traves de  https://losguayos.arkadu.com/login/ 
  Es un sistema de acceso dinámico y muy seguro, usted no debe recordar ninguna contraseña complicada, tampoco debe preocuparse porque otros puedan tomar control de su cuenta.
 
-.. |codigoacceso| image:: /images/ingresar_correo.png
-      :align: middle
-      :alt: pantalla de ingresar correo
-      :width: 600
-
     Para solicitar el acceso al sistema debes ingresar la direccion de tu correo electronico preferiblemente el que usas actualmente ,luego presiona el boton de solicitar acceso ,ahora ve a tu bandeja de entrada y verifica que en pocos minutos recibiras el codigo de validacion necesario para poder  continuar  
-
-.. |codigoacceso| image:: /images/codigo_acceso_enviado.png
-      :align: middle
-      :alt: pantalla de codigo de acceso enviado
-      :width: 600
-
 
 ++++++++++++++++++++
 Perfil del Usuario
