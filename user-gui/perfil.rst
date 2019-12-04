@@ -68,7 +68,7 @@ ingresar datos:
   |verificacion_numero_telefono|
 
 
-.. |verificacion numero telefono| image:: /images/verificacion_numero_telefono.png
+.. |verificacion numero telefono| image:: /images/verf_num.png 
       :align: middle
       :alt: pantalla de inicio ingreso
       :width: 600
