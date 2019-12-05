@@ -63,10 +63,11 @@ de telefono si asi lo deseas ,si te parece muy complicado
 puedes omitir este paso.
  
  A continuacion te apareceran nuestros modulos de acceso al usuario:
-*modulo de hacienda
-*modulo catastro 
-*modulo usuario
-*soporte tecnico 
+
+* modulo de hacienda
+* modulo catastro 
+* modulo usuario
+* soporte tecnico 
 
 ================================================================
 
