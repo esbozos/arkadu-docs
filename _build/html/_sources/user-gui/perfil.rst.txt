@@ -59,16 +59,23 @@ ingresar datos:
 
 
 
-   te hemos enviado un MSM con un numero de verificacion, por favor ingresalo 
+   Te hemos enviado un MSM con un numero de verificacion, por favor ingresalo 
    para validar qu es tu numero de contacto, si no te llega el mensaje  puedes
-   solicitar uno nuevo , tambien te damos la  opcion de cambiar tu numero de 
-   telefono si asi lo deseas , si te parece muy complicado puedes omitir este paso. 
+   solicitar uno nuevo , tambien te damos la  opcion de cambiar tu numero  
+    de telefono si asi lo deseas ,si te parece muy complicado  
+    puedes omitir este paso.
  
+    A continuacion te apareceran nuestros modulos de acceso al usuario:
 
-   ===================
-    Modulo de usuario
-   ===================
+    *modulo de hacienda
+    *modulo catastro 
+    *modulo usuario
+    *soporte tecnico 
 
+   ********************
+     Modulo de usuario
+   ********************
+=======================================================================
 
 
 
