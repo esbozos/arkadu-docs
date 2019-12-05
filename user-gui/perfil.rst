@@ -25,19 +25,17 @@ continuar.
 
 |inputemail|
 
-.. |inputemail| image:: /images/ingresar_correo.png
-      :align: middle
-      :alt: pantalla de inicio ingreso
-      :width: 600
+
 
 
 solicita el codigo 
 
 
 
-|codigo_acceso|
+|codigoacceso|
 
- |codigo_acceso_enviado|
+|codigoaccesoenviado|
+.. note:: `captura de pantalla de espera para introducir el códgo`
 
 debe ingresar el codigo que acabas de recibir para poder continuar 
 
@@ -61,16 +59,23 @@ ingresar datos:
 
 
 
-   te hemos enviado un MSM con un numero de verificacion, por favor ingresalo 
+   Te hemos enviado un MSM con un numero de verificacion, por favor ingresalo 
    para validar qu es tu numero de contacto, si no te llega el mensaje  puedes
-   solicitar uno nuevo , tambien te damos la  opcion de cambiar tu numero de 
-   telefono si asi lo deseas , si te parece muy complicado puedes omitir este paso. 
+   solicitar uno nuevo , tambien te damos la  opcion de cambiar tu numero  
+    de telefono si asi lo deseas ,si te parece muy complicado  
+    puedes omitir este paso.
  
+    A continuacion te apareceran nuestros modulos de acceso al usuario:
 
-   ===================
-    Modulo de usuario
-   ===================
+    *modulo de hacienda
+    *modulo catastro 
+    *modulo usuario
+    *soporte tecnico 
 
+   ********************
+     Modulo de usuario
+   ********************
+=======================================================================
 
 
 
@@ -121,9 +126,9 @@ Todo en un solo lugar. |codigoacceso|
       :width: 600
 
 
-.. |codigoaccesoenviados| image:: /images/codigo_acceso_enviado.png
+.. |codigoaccesoenviado| image:: /images/codigo_acceso_enviado.png
       :align: middle
-      :alt: pantalla de inicio ingreso
+      :alt: código de acceso enviado. 
       :width: 600
 
 .. |completardatosusuario| image:: /images/completar_datos.png
@@ -136,3 +141,7 @@ Todo en un solo lugar. |codigoacceso|
       :alt: pantalla de inicio ingreso
       :width: 600
 
+.. |inputemail| image:: /images/ingresar_correo.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
