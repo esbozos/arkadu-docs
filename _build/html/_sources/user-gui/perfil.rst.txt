@@ -22,14 +22,35 @@ el boton de solicitar acceso ,ahora ve a tu bandeja de entrada y verifica que
 en pocos minutos recibiras el codigo de validacion necesario para poder 
 continuar.
 
+
 |inputemail|
+
+.. |inputemail| image:: /images/ingresar_correo.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
+
 solicita el codigo 
+
+
 
 |codigo_acceso|
 
-|codigo_acceso_enviado|
+.. |codigo acceso enviados| image:: /images/codigo_acceso_enviado.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
+
+ |codigo_acceso_enviado|
 
 debe ingresar el codigo que acabas de recibir para poder continuar 
+
+.. |completar datos usuario| image:: /images/completar_datos.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
 
 |completar_datos|
 
@@ -41,29 +62,44 @@ ingresar datos:
   - apellidos
   - cedula de identidad
   - fecha de nacimiento 
-  |al ingresar todos nuestros datos, procederemos a guardar .
+
+   al ingresar todos nuestros datos, procederemos a guardar .
 
   |verificacion_numero_telefono|
 
-  te hemos enviado un msm con un numero de verificacion, por favor ingresalo 
-  para validar qu es tu numero de contacto, si no te llega el mensaje puedes
+
+.. |verificacion numero telefono| image:: /images/verf_num.png 
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
+
+
+   te hemos enviado un MSM con un numero de verificacion, por favor ingresalo 
+   para validar qu es tu numero de contacto, si no te llega el mensaje  puedes
    solicitar uno nuevo , tambien te damos la  opcion de cambiar tu numero de 
-   telefono si asi lo deseas , si te parece muy complicado puedes omitir este paso.
+   telefono si asi lo deseas , si te parece muy complicado puedes omitir este paso. 
+ 
 
-   ====================
-     modulo de usuario
-   ====================
+   ===================
+    Modulo de usuario
+   ===================
+
+.. |modulo de usuario| image:: /images/modulo_usuario.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
 
 
-++++++++++++++++++++
-Perfil del Usuario
-++++++++++++++++++++
 
-* Empresa
-* personales
 
-- Publico
-- Corporativo
+============================
+    Perfil del Usuario
+============================
+|* Empresa  | * Personal |
+============================
+|* Publico  | * corporativo|
+============================
 
 +++++++++++++++++++++++++
 Validacion para acceder

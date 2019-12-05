@@ -37,20 +37,10 @@ solicita el codigo
 
 |codigo_acceso|
 
-.. |codigo acceso enviados| image:: /images/codigo_acceso_enviado.png
-      :align: middle
-      :alt: pantalla de inicio ingreso
-      :width: 600
-
-
  |codigo_acceso_enviado|
 
 debe ingresar el codigo que acabas de recibir para poder continuar 
 
-.. |completar datos usuario| image:: /images/completar_datos.png
-      :align: middle
-      :alt: pantalla de inicio ingreso
-      :width: 600
 
 |completar_datos|
 
@@ -68,10 +58,6 @@ ingresar datos:
   |verificacion_numero_telefono|
 
 
-.. |verificacion numero telefono| image:: /images/verf_num.png 
-      :align: middle
-      :alt: pantalla de inicio ingreso
-      :width: 600
 
 
 
@@ -85,10 +71,6 @@ ingresar datos:
     Modulo de usuario
    ===================
 
-.. |modulo de usuario| image:: /images/modulo_usuario.png
-      :align: middle
-      :alt: pantalla de inicio ingreso
-      :width: 600
 
 
 
@@ -138,17 +120,13 @@ Todo en un solo lugar. |codigoacceso|
       :alt: pantalla de inicio ingreso
       :width: 600
 
-.. |inputemail| image:: /images/ingresar_correo.png
+
+.. |codigoaccesoenviados| image:: /images/codigo_acceso_enviado.png
       :align: middle
       :alt: pantalla de inicio ingreso
       :width: 600
 
-.. |codigo acceso enviados| image:: /images/codigo_acceso_enviado.png
-      :align: middle
-      :alt: pantalla de inicio ingreso
-      :width: 600
-
-.. |completar datos usuario| image:: /images/completar_datos.png
+.. |completardatosusuario| image:: /images/completar_datos.png
       :align: middle
       :alt: pantalla de inicio ingreso
       :width: 600
