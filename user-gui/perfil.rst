@@ -53,7 +53,7 @@ ingresar datos:
 
    al ingresar todos nuestros datos, procederemos a guardar .
 
-  |verificacion_numero_telefono|
+|ver_num|
 
 
 Te hemos enviado un MSM con un numero de verificacion, por favor ingresalo 
@@ -130,7 +130,7 @@ Todo en un solo lugar. |codigoacceso|
       :alt: código de acceso enviado. 
       :width: 600
 
-.. |completardatosusuario| image:: /images/completar_datos.png
+.. |completar_datos| image:: /images/completar_datos.png
       :align: middle
       :alt: pantalla de inicio ingreso
       :width: 600
@@ -141,6 +141,11 @@ Todo en un solo lugar. |codigoacceso|
       :width: 600
 
 .. |inputemail| image:: /images/ingresar_correo.png
+      :align: middle
+      :alt: pantalla de inicio ingreso
+      :width: 600
+
+.. |ver_num| image:: /images/ver_num.png
       :align: middle
       :alt: pantalla de inicio ingreso
       :width: 600
