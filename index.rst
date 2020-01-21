@@ -15,6 +15,7 @@ Welcome to Arkadu's documentation!
    user-gui/acceso
    user-gui/policy
    user-gui/perfil
+   third-apps/*
 
 Indices and tables
 ==================
