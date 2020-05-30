@@ -1,0 +1,37 @@
+{
+    "res": 1,
+    "data": {
+      "account": {
+        "id": 4,
+        "name": "BANCO CTE",
+        "holders_name": "Alcald\u00eda de Guaicaipuro G-20004620-1",
+        "account_number": "0100-0001-08-0006051619",
+        "account_type": "checking",
+        "description": "CUENTA BANCARIA",
+        "is_active": true,
+        "is_public": true,
+        "balance": "950000000.0500",
+        "image": "/media/accounts/2020/04/27/logos_bancos-05_fT6vaZ7.png",
+        "created": "2020-02-26T00:06:19.749000-04:00",
+        "updated": "2020-05-30T16:57:20.477000-04:00",
+        "owner": 1,
+        "customer": 2
+      },
+      "movements": [
+        {
+          "id": 26,
+          "reference": "4654555A",
+          "amount": "29300202.0900",
+          "operation": "credit",
+          "datetime": "2020-03-30",
+          "note": "Cheque depositado en cuenta",
+          "processed": false,
+          "created": "2020-05-30T16:57:20.481565-04:00",
+          "updated": "2020-05-30T16:57:20.481573-04:00",
+          "owner": 2050641,
+          "customer": 2,
+          "account": 4
+        }
+      ]
+    }
+  }

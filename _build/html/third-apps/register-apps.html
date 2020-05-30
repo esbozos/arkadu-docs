@@ -1,0 +1,856 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Registrar Aplicaciones de Terceros &mdash; documentación de Arkadu - </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="prev" title="Bienvenido" href="../user-gui/perfil.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Arkadu
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/intro.html">Arkadu - Filosofía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-gui/registro.html">Crear una cuenta en Arkadu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-gui/acceso.html">Código de Acceso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-gui/acceso.html#a-donde-llega-el-codigo">¿A donde llega el código?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-gui/policy.html">Términos y Condiciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-gui/perfil.html">Bienvenido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-gui/perfil.html#modulo-de-usuario">Modulo de usuario</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Registrar Aplicaciones de Terceros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#agentes-de-recaudacion">Agentes de recaudación</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#activar-un-agente-recaudador">Activar un agente recaudador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#integracion-con-el-api-de-recaudo">Integración con el API de recaudo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#consultas-al-sistema">Consultas al sistema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#consultar-ordenes-de-pago-y-o-productos">Consultar Ordenes de Pago y/o productos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#elementos-importantes">Elementos importantes:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#estructura-de-las-respuestas">Estructura de las respuestas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#elegir-items-a-pagar">Elegir Items a pagar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#registrar-pago">Registrar Pago</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Elementos Importantes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reporte-de-movimientos">Reporte de Movimientos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#crear-orden-con-productos">Crear Orden con productos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#renovar-access-token">Renovar Access Token</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Arkadu</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Registrar Aplicaciones de Terceros</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/third-apps/register-apps.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>La plataforma cuenta con un avanzado API que permite desarrollar Aplicaciones
+que extiendan las funciones o interactúen con la plataforma.</p>
+<p>Para ello el administrador con privilegios de super usuario debe crear las credenciales de
+las Aplicaciones.</p>
+<div class="section" id="registrar-aplicaciones-de-terceros">
+<h1>Registrar Aplicaciones de Terceros<a class="headerlink" href="#registrar-aplicaciones-de-terceros" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Existen varias formas para registrar una nueva aplicación, la primera de ellas es a través del panel administrativo de django. Allí encontraremos <strong>Oauth Provider</strong> y a continuación seguiremos el vínculo de agregar nueva aplicación.</p>
+<p>En el formulario de creación, tendremos los siguientes parámetros que serán similares en cada una de las opciones de creación de aplicaciones.</p>
+<p>## campos del formulario</p>
+<ul class="simple">
+<li><p>Nombre: será la identificación en formato de texto que nos ayudará a distinguir la aplicación en el sistema y poder generar o revocar los token de autorización.</p></li>
+<li><p>client_id: Hash string, generado automáticamente por el sistema, sin embargo puede editarlo y ajustarlo según corresponda. Si está migrando una app de una versión antigua del sistema, o simplemente desea proporcionar integración con otras credenciales <em>oauth</em>, puede pegar dichos valores en el formulario; también es posible editarlo posteriormente.</p></li>
+<li><p>client_secret: Hash String, generado automáticamente por el sistema. Aplican las mismas condiciones que para el client_id.</p></li>
+<li><p>Client_type:</p></li>
+<li><p>Grant_type: client type password</p></li>
+<li><p>confidencial: public or private</p></li>
+<li><p>return path:</p></li>
+</ul>
+</div>
+<div class="section" id="agentes-de-recaudacion">
+<h1>Agentes de recaudación<a class="headerlink" href="#agentes-de-recaudacion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>En Arkadu trabajamos con el objetivo que el proceso de pago y recaudación sea lo más ágil y efectivo posible.
+Para ello creamos una interfaz de comunicación robusta, 100% segura y fácil para implementar con sistemas de pago de terceros.</p>
+<div class="section" id="activar-un-agente-recaudador">
+<h2>Activar un agente recaudador<a class="headerlink" href="#activar-un-agente-recaudador" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Es muy sencillo, tan solo se requieren 3 pasos:</p>
+<ul class="simple">
+<li><p>Registrar una app de terceros.</p></li>
+<li><p>Identificar al usuario responsable de las operaciones de recaudación (debe ser un usuario/email registrado en el sistema) y otorgar el ROL de <strong>«Agente de recaudación»</strong></p></li>
+<li><p>Generar el token Oauth y extender su validez por un tiempo superior al predeterminado (90 días en la configuración por defecto)</p></li>
+</ul>
+</div>
+<div class="section" id="integracion-con-el-api-de-recaudo">
+<h2>Integración con el API de recaudo<a class="headerlink" href="#integracion-con-el-api-de-recaudo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para poder realizar las operaciones descritas a continuación, su aliado comercial debe proporcionarle los siguientes datos:</p>
+<ul>
+<li><p>client_id</p></li>
+<li><p>client_secret</p></li>
+<li><p>access_token</p></li>
+<li><p>refresh_token</p></li>
+<li><p>customer_id (opcional si solo hará recaudo para una cuenta en <strong>Arkadu</strong>)</p>
+<blockquote>
+<div><p><strong>NOTA</strong> <em>Todos estos datos son confidenciales y deben ser almacenados en un lugar seguro.</em>
+<em>En caso de presentar algún incidente de seguridad, por favor reportarlo para revocarlos y solicitar la generación de nuevas credenciales.</em></p>
+</div></blockquote>
+</li>
+</ul>
+<div class="section" id="consultas-al-sistema">
+<h3>Consultas al sistema<a class="headerlink" href="#consultas-al-sistema" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Todas las peticiones al API deben cumplir con las siguientes condiciones:</p>
+<dl class="field-list simple">
+<dt class="field-odd">HOST arkadu.com</dt>
+<dd class="field-odd"><p>El host que responderá autoritativamente a las peticiónes del API siempre será arkadu.com</p>
+</dd>
+<dt class="field-even">Protocolo HTTPS</dt>
+<dd class="field-even"><p>Todas las peticiones deben ser realizadas a través del protocolo <em>HTTPS</em> cualquier petidición
+realizada en HTTP (puerto: 80) serán redirigidas automáticamente al puerto 463 implementando
+el certificado SSL/TLS. Asegúrese que su cliente de peticiones sea compatible con la verficiación
+de las firmas.
+Toda petición a través de HTTP que no acepte redireccionamiento, será rechazada.</p>
+</dd>
+<dt class="field-odd">Método POST</dt>
+<dd class="field-odd"><p>El método de la petición siempre será <em>POST</em>, toda solictud que implemente otro método
+será rechazada como <em>Método no Válido</em></p>
+</dd>
+<dt class="field-even">Encabezados Content-Type y Authorization</dt>
+<dd class="field-even"><p>Todas las peticiones deben incluir los siguientes encabezados</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+<span class="hll">    <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer &lt;access_token&gt;&quot;</span>
+</span><span class="p">}</span>
+</pre></div>
+</div>
+<p><em>Excepto las peticiones no autenticadas, como la renovación del token.</em></p>
+<dl class="field-list simple">
+<dt class="field-odd">Cuerpo JSON</dt>
+<dd class="field-odd"><p>El cuerpo de las peticiones deben ser en formato JSON.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="consultar-ordenes-de-pago-y-o-productos">
+<h3>Consultar Ordenes de Pago y/o productos<a class="headerlink" href="#consultar-ordenes-de-pago-y-o-productos" title="Enlazar permanentemente con este título">¶</a></h3>
+<blockquote>
+<div><p>El principal rol del agente de recaudo es recibir los pagos de usuarios a
+nombre de un cliente activo en Arkadu. Para ello se inicia con una consulta
+de las ordenes de pago abiertas creadas por el usuario, o los productos pendientes
+de pago en el sistema.</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../_images/consulta_ejemplo_input.png"><img alt="../_images/consulta_ejemplo_input.png" src="../_images/consulta_ejemplo_input.png" style="height: 400px;" /></a>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># EJEMPLO DE CONSULTA DE ORDENES AL API DE ARKADU</span>
+<span class="c1"># 2020-03-02</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">get_order_for_doc</span><span class="p">(</span><span class="n">doc_id</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Obtiene las ordenes pendientes del usuario </span>
+<span class="sd">        y/o productos pendientes de pago que pueden </span>
+<span class="sd">        ser agregados para crear una nueva orden.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://arkadu.com/api/shop/order/get/&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC&quot;</span>
+    <span class="p">}</span>
+    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;VE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;doc_id&quot;</span><span class="p">:</span> <span class="n">doc_id</span>
+    <span class="p">}</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">body</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">ordenes</span> <span class="o">=</span> <span class="n">get_order_for_doc</span><span class="p">(</span><span class="s1">&#39;J-40157748-2&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ordenes</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="section" id="elementos-importantes">
+<h4>Elementos importantes:<a class="headerlink" href="#elementos-importantes" title="Enlazar permanentemente con este título">¶</a></h4>
+<dl class="simple">
+<dt>country:</dt><dd><p>Al realizar una consulta de ordenes de usuario, debemos identificar
+el código ISO 3166-1 alpha-2 del país del documento de identidad</p>
+</dd>
+<dt>doc_id:</dt><dd><p>Documento de identidad formateado según la estructura del país.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="section" id="estructura-de-las-respuestas">
+<h2>Estructura de las respuestas<a class="headerlink" href="#estructura-de-las-respuestas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Todas las respuestas al API responderán con data en formato JSON, el
+resultado del ejemplo anterior sería algo así:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;res&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;orders&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2051963</span><span class="p">,</span>
+        <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2052042</span><span class="p">,</span>
+            <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2052142</span><span class="p">,</span>
+              <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Ramo Agregado Venta de Viveres&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;240000.00&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-18T12:02:32.719311-04:00&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-18T12:02:32.719328-04:00&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;stock&quot;</span><span class="p">:</span> <span class="mi">10</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;240000.000000&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&quot;order&quot;</span><span class="p">:</span> <span class="mi">2051963</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;customer&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">10050482</span><span class="p">,</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alcaldía de Guaicaipuro&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Alcaldía del municipio Guaicaipuro&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;logo&quot;</span><span class="p">:</span> <span class="s2">&quot;https://static.bornets.com/media/customers/logo/Guaicaipuro-Icono.png&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="s2">&quot;https://static.bornets.com/media/Splash-header.jpg&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;https://static.bornets.com/media/Guaicaipuro-Icono.png&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;shortname&quot;</span><span class="p">:</span> <span class="s2">&quot;Guaicaipuro&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;is_active&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;insurance&quot;</span><span class="p">:</span> <span class="s2">&quot;0.000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;handling_fee&quot;</span><span class="p">:</span> <span class="s2">&quot;0.000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;discount&quot;</span><span class="p">:</span> <span class="s2">&quot;0.000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;open&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-29T15:18:55.095245-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-29T15:18:55.095262-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paid&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;pending_balance&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="mi">109679</span><span class="p">,</span>
+        <span class="nt">&quot;get_total&quot;</span><span class="p">:</span> <span class="s2">&quot;240000.00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;payments&quot;</span><span class="p">:</span> <span class="p">[]</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">22943</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Aprob. 953630 Cancela Multa Nro. DH-DAL-266-/2019&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;10000.00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-04-25T00:12:23.795762-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-04-25T00:12:23.795774-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stock&quot;</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2052303</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Declaración #12712 | IV TRIMESTRE 2019 INVERSIONES LA MONTANITA 1707 CA&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;226204.61&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-29T12:26:16.035605-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-29T12:27:13.758231-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stock&quot;</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2052306</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Declaración #12712 | IV TRIMESTRE 2019 INVERSIONES LA MONTANITA 1707 CA&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;226204.61&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-29T14:36:31.206895-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-29T14:52:15.671894-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stock&quot;</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2052307</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Declaración #12712 | IV TRIMESTRE 2019 INVERSIONES LA MONTANITA 1707 CA&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;226204.61&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-29T14:55:10.665146-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-29T14:55:44.096284-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stock&quot;</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2052302</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Declaración #9498 | I TRIMESTRE 2019 INVERSIONES LA MONTANITA 1707 CA&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;452031.93&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-29T12:22:07.471618-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-29T12:23:09.395665-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stock&quot;</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="../_images/resultados_ejemplo.png"><img alt="../_images/resultados_ejemplo.png" src="../_images/resultados_ejemplo.png" style="height: 400px;" /></a>
+<p>Toda respuesta exitosa al API está estructurada de la siguientes manera</p>
+<ul class="simple">
+<li><p>res = 1</p></li>
+<li><p>data = JSON data</p></li>
+<li><p>status = 200</p></li>
+</ul>
+<p>En el ejemplo anterior, el sistema del agente recaudador deberá mostrarle
+al usuario final (Operador de caja, HomeBanking, App Móvil, entre otros),
+un menú de elección simple para el caso de las ordenes y múltiple para el
+caso de los productos.</p>
+<p>Toda respuesta rechazada al API tendrá la siguiente estructura</p>
+<ul class="simple">
+<li><p>res = 0</p></li>
+<li><p>messages = «cadena de texto»</p></li>
+<li><p>code = «Código Interno del API para identificar el error»</p></li>
+<li><p>status = HTTP STATUS CODE 400+</p></li>
+</ul>
+</div>
+<div class="section" id="elegir-items-a-pagar">
+<h2>Elegir Items a pagar<a class="headerlink" href="#elegir-items-a-pagar" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En el ejemplo de consulta anterior. Recibimos una respuesta que contiene
+una order identificada con el <em>ID 2052042</em> y una serie de productos que
+le pertenecen directamente al usuario consultado.</p>
+<dl class="simple">
+<dt>orders:</dt><dd><ul class="simple">
+<li><p>id -&gt; <em>2051963</em></p></li>
+<li><p>owner -&gt; será nuestro user_id = <em>109679</em></p></li>
+<li><p>customer -&gt; id <em>10050482</em> Nos permite presentarle información personalizada al usuario sobre a quien va dirigido el pago.</p></li>
+<li><p>get_total -&gt; será nuestro monto a pagar para la orden.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Luego de haber recaudado el importe de la orden, procedemos a reportar el pago de la misma al API de arkadu.</p>
+</div>
+<div class="section" id="registrar-pago">
+<h2>Registrar Pago<a class="headerlink" href="#registrar-pago" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para ello debemos indicar los datos obtenidos previamente en la consulta.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># EJEMPLO DE REGISTRO DE PAGO DE ORDENES AL API DE ARKADU</span>
+<span class="c1"># 2020-03-02</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">register_payment</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Registra el pago de una orden.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://arkadu.com/api/shop/order/pay/&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC&quot;</span>
+    <span class="p">}</span>
+    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;240000.00&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;order&quot;</span><span class="p">:</span> <span class="s2">&quot;2051963&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;account&quot;</span><span class="p">:</span> <span class="s2">&quot;0100-0001-08-0006051619&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;ABDC0000123&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-01-30 05:46&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;109679&quot;</span>
+    <span class="p">}</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">body</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">pago</span> <span class="o">=</span> <span class="n">register_payment</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pago</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Del proceso de registro de pago recibiremos una respuesta del API con los datos
+del pago:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;res&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2051861</span><span class="p">,</span>
+    <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1096791</span><span class="p">,</span>
+      <span class="nt">&quot;get_full_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Marina Esposito&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;dob&quot;</span><span class="p">:</span> <span class="s2">&quot;1983-06-03&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;female&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;is_active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nt">&quot;suspended&quot;</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;ABC32456&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;channel&quot;</span><span class="p">:</span> <span class="s2">&quot;online&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;317897.81&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;admin&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2050641</span><span class="p">,</span>
+      <span class="nt">&quot;get_full_name&quot;</span><span class="p">:</span> <span class="s2">&quot;CLIENT EXTERNAL&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;dob&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-01&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;male&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;is_active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nt">&quot;suspended&quot;</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;approved&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T16:27:46.317585-04:00&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T16:27:46.317597-04:00&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Elementos Importantes<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h2>
+<ul class="simple">
+<li><p>id : Id del pago en Arkadu. deberá relacionarse internamente para cualquier reverso u operación de reclamos.</p></li>
+<li><p>state: “approved” este estado nos indica que ha sido exitoso el proceso de pago de la orden.</p></li>
+<li><p>reference: debe coincidir con la proporcionada por el agente de recaudo al momento de registrar el pago.</p></li>
+<li><p>owner: contiene los datos del usuario pagador. sirve de validación y para emisión de recibos y/o facturas.</p></li>
+<li><p>admin: coincide con el usuario que ha registrado el pago / agente de recaudo.</p></li>
+<li><p>amount: El monto registrado de pago por la orden.</p></li>
+</ul>
+<p>En caso que realice más de una solicitud con los mismos datos, la segunda respuesta indicará que ya existe un pago
+registrado para esa orden, el res=0, pero tendremos los detalles del pago para validar si la referencia y el admin
+ha sido el del agente recaudador.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;res&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Orden 2051910 has a payment registered&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;order&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2051910</span><span class="p">,</span>
+      <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2051982</span><span class="p">,</span>
+          <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2052197</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Declaraci\u00f3n #2051196 | I TRIMESTRE 2019 None&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;145157.11&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T08:24:58.465500-04:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T08:26:51.907787-04:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;stock&quot;</span><span class="p">:</span> <span class="mi">0</span>
+          <span class="p">},</span>
+          <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;145157.110000&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+          <span class="nt">&quot;order&quot;</span><span class="p">:</span> <span class="mi">2051910</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2051983</span><span class="p">,</span>
+          <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2052198</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Declaraci\u00f3n #2051197 | II TRIMESTRE 2019 None&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;109740.70&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T08:26:22.526699-04:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T08:28:50.953076-04:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;stock&quot;</span><span class="p">:</span> <span class="mi">0</span>
+          <span class="p">},</span>
+          <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;172740.700000&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+          <span class="nt">&quot;order&quot;</span><span class="p">:</span> <span class="mi">2051910</span>
+        <span class="p">}</span>
+      <span class="p">],</span>
+      <span class="nt">&quot;customer&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alcald\u00eda de Guaicaipuro&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Alcald\u00eda del municipio Guaicaipuro&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;logo&quot;</span><span class="p">:</span> <span class="s2">&quot;/media/customers/logo/Guaicaipuro-Icono.png&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="s2">&quot;/media/Splash-header.jpg&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;/media/Guaicaipuro-Icono.png&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shortname&quot;</span><span class="p">:</span> <span class="s2">&quot;Guaicaipuro&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;is_active&quot;</span><span class="p">:</span> <span class="kc">true</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;insurance&quot;</span><span class="p">:</span> <span class="s2">&quot;0.000000&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;handling_fee&quot;</span><span class="p">:</span> <span class="s2">&quot;0.000000&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;discount&quot;</span><span class="p">:</span> <span class="s2">&quot;0.000000&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;completed&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T08:26:51.820918-04:00&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T16:27:46.329451-04:00&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;paid&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nt">&quot;pending_balance&quot;</span><span class="p">:</span> <span class="s2">&quot;0.000000&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="mi">1096791</span><span class="p">,</span>
+      <span class="nt">&quot;get_total&quot;</span><span class="p">:</span> <span class="s2">&quot;317897.81&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;payments&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2051861</span><span class="p">,</span>
+          <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1096791</span><span class="p">,</span>
+            <span class="nt">&quot;get_full_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Marina Esposito&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;dob&quot;</span><span class="p">:</span> <span class="s2">&quot;1983-06-03&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;female&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;is_active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;suspended&quot;</span><span class="p">:</span> <span class="kc">false</span>
+          <span class="p">},</span>
+          <span class="nt">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;ABC32456&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;channel&quot;</span><span class="p">:</span> <span class="s2">&quot;online&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;317897.81&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;admin&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2050641</span><span class="p">,</span>
+            <span class="nt">&quot;get_full_name&quot;</span><span class="p">:</span> <span class="s2">&quot;CLIENT EXTERNAL&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;dob&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-01&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="s2">&quot;male&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;is_active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;suspended&quot;</span><span class="p">:</span> <span class="kc">false</span>
+          <span class="p">},</span>
+          <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;approved&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T16:27:46.317585-04:00&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T16:27:46.317597-04:00&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;101004&quot;</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="reporte-de-movimientos">
+<h2>Reporte de Movimientos<a class="headerlink" href="#reporte-de-movimientos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Si el agente recaudador es el administrador de cuenta (Banco, plataforma de pagos dígitales, Caja de efectivo)
+una de las principales atribuciones es el reportar los movimientos y balance de cuenta de forma recurrente al cliente en Arkadu
+esto permite mantenerle informado sobre el proceso de recaudo, informar operaciones de debito y credito adicionales, asi como las comisiones causadas
+por el servicio de recaudación.</p>
+<p>Para ello se recomienda el uso de cronjobs al menos una vez al día, con el reporte de cuenta.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># EJEMPLO DE REGISTRO DE MOVIMIENTOS DE CUENTA AL API DE ARKADU</span>
+<span class="c1"># 2020-03-02</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">report_movements</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Registra los movimientos y balance actual de cuenta</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://arkadu.com/api/shop/account/report/&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC&quot;</span>
+    <span class="p">}</span>
+    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;account&quot;</span><span class="p">:</span> <span class="s2">&quot;0100-0001-08-0006051619&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;current_balance&quot;</span><span class="p">:</span> <span class="s2">&quot;450000000000.05&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;customer_id&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;movements&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;ADC4D3DS&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;230202.09&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;operation&quot;</span><span class="p">:</span> <span class="s2">&quot;debit&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-03-30&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;note&quot;</span><span class="p">:</span> <span class="s2">&quot;Comisión de recaudo....&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;ADC400005&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;93000202.09&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;operation&quot;</span><span class="p">:</span> <span class="s2">&quot;credit&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-03-30&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;note&quot;</span><span class="p">:</span> <span class="s2">&quot;Pago en linea homebanking&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;reference&quot;</span><span class="p">:</span> <span class="s2">&quot;ADC400005&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;140000000000.00&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;operation&quot;</span><span class="p">:</span> <span class="s2">&quot;credit&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-03-30&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;note&quot;</span><span class="p">:</span> <span class="s2">&quot;Transferencia internacional recibida&quot;</span>
+        <span class="p">},</span>
+        <span class="o">...</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">body</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">report</span> <span class="o">=</span> <span class="n">report_movements</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">report</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+
+</pre></div>
+</div>
+<p>Una vez más obtenemos una respuesta del API con la siguiente estrcutura.</p>
+</div>
+<div class="section" id="crear-orden-con-productos">
+<h2>Crear Orden con productos<a class="headerlink" href="#crear-orden-con-productos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Como vimos en Consultar Ordenes de Pago y/o productos el sistema además de las ordenes pendientes de pago
+también nos envía los productos individuales que no han sido pagados por el usuario o productos disponibles en la
+tienda del cliente para pagos estandar.</p>
+<p>Esta opción es exclusiva de la selección de la orden; Es decir, si se elige una orden a pagar no se debe permitir
+elegir productos individualers y viceversa.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># EJEMPLO CREAR ORDEN AL API DE ARKADU</span>
+<span class="c1"># 2020-03-02</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">create_order</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">       crea una nueva orden con 1 o más productos disponibles para el usuario</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://arkadu.com/api/shop/order/create/&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC&quot;</span>
+    <span class="p">}</span>
+    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1451502154&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;products&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2052142&quot;</span><span class="p">,</span> <span class="s2">&quot;20545154&quot;</span><span class="p">,</span> <span class="p">]</span>
+    <span class="p">}</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">body</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">nueva_orden</span> <span class="o">=</span> <span class="n">create_order</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nueva_orden</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Nuevamente el API nos reponde con los datos de la orden recien creada, el cual podemos proceder
+a recaudar inmediatamente. Es decir no require el proceso de selección de orden.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;res&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2051912</span><span class="p">,</span>
+        <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2051985</span><span class="p">,</span>
+            <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2052142</span><span class="p">,</span>
+              <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Ramo Agregado Venta de Viveres&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;240000.00&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+              <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-18T12:02:32.719311-04:00&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-18T12:02:32.719328-04:00&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;stock&quot;</span><span class="p">:</span> <span class="mi">7</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="s2">&quot;240000.000000&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&quot;order&quot;</span><span class="p">:</span> <span class="mi">2051912</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;customer&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alcald\u00eda de Guaicaipuro&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Alcald\u00eda del municipio Guaicaipuro&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;logo&quot;</span><span class="p">:</span> <span class="s2">&quot;/media/customers/logo/Guaicaipuro-Icono.png&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="s2">&quot;/media/Splash-header.jpg&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;icon&quot;</span><span class="p">:</span> <span class="s2">&quot;/media/Guaicaipuro-Icono.png&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;shortname&quot;</span><span class="p">:</span> <span class="s2">&quot;Guaicaipuro&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;is_active&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;insurance&quot;</span><span class="p">:</span> <span class="s2">&quot;0.000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;handling_fee&quot;</span><span class="p">:</span> <span class="s2">&quot;0.000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;discount&quot;</span><span class="p">:</span> <span class="s2">&quot;0.000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;open&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;created&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T17:12:33.639606-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;updated&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-05-30T17:12:33.639622-04:00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paid&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;pending_balance&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;get_total&quot;</span><span class="p">:</span> <span class="s2">&quot;240000.00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;payments&quot;</span><span class="p">:</span> <span class="p">[]</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+<p>Tomamos el ID de la nueva orden (2051912 en el ejemplo) y realizamos la misma operación de
+registro de pago indicado en la sección de arriba <span class="xref std std-ref">Registrar Pago</span>.</p>
+<div class="section" id="renovar-access-token">
+<h3>Renovar Access Token<a class="headerlink" href="#renovar-access-token" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Por seguridad es recomendable renovar el access_token frecuentemente. para ello
+debemos hacer un request al API de la siguiente manera:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># EJEMPLO DE RENOVACIÓN DEL TOKEN AL API DE ARKADU</span>
+<span class="c1"># 2020-03-02</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">renew_token</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Obtiene un nuevo access_token a través del</span>
+<span class="sd">        refresh_token provisto por su aliado comercial.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://arkadu.comapi/user/access/get-token/&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span>
+    <span class="p">}</span>
+
+    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;client_id&quot;</span><span class="p">:</span> <span class="s2">&quot;BFrpSg7hLshQcCtmRGCKplFObFBXbe2SrN6Ik3yb&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;client_secret&quot;</span><span class="p">:</span> <span class="s2">&quot;qrqbjHdzd69geHxtN3jVE5TbUgigxy3aRWK07UAGSOUrnzbaDiYUaPaR1J3StbEWR7QXls8vtCt6tXwcF4y3E1ziQShDHqRRmaw0H2qP1dGxltGjz8uCqJV7hLMeQQ5Z&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;grant_type&quot;</span><span class="p">:</span> <span class="s2">&quot;refresh_token&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;refresh_token&quot;</span><span class="p">:</span> <span class="s2">&quot;TJPkSQFKcHYIWErZXLqOYf1qdJasCl&quot;</span>
+    <span class="p">}</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">body</span><span class="p">),</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">new_token</span> <span class="o">=</span> <span class="n">renew_token</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_token</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../user-gui/perfil.html" class="btn btn-neutral float-left" title="Bienvenido" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Arkadu SAS
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

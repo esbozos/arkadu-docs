@@ -1,0 +1,95 @@
+{
+  "res": 1,
+  "data": {
+    "orders": [
+      {
+        "id": 2051963,
+        "items": [
+          {
+            "id": 2052042,
+            "product": {
+              "id": 2052142,
+              "name": "Ramo Agregado Venta de Viveres",
+              "price": "240000.00",
+              "image": "",
+              "created": "2020-05-18T12:02:32.719311-04:00",
+              "updated": "2020-05-18T12:02:32.719328-04:00",
+              "stock": 10
+            },
+            "price": "240000.000000",
+            "quantity": 1,
+            "order": 2051963
+          }
+        ],
+        "customer": {
+          "id": 10050482,
+          "name": "Alcaldía de Guaicaipuro",
+          "description": "Alcaldía del municipio Guaicaipuro",
+          "logo": "https://static.bornets.com/media/customers/logo/Guaicaipuro-Icono.png",
+          "header": "https://static.bornets.com/media/Splash-header.jpg",
+          "icon": "https://static.bornets.com/media/Guaicaipuro-Icono.png",
+          "shortname": "Guaicaipuro",
+          "is_active": true
+        },
+        "insurance": "0.000000",
+        "handling_fee": "0.000000",
+        "discount": "0.000000",
+        "state": "open",
+        "created": "2020-05-29T15:18:55.095245-04:00",
+        "updated": "2020-05-29T15:18:55.095262-04:00",
+        "paid": false,
+        "pending_balance": "",
+        "owner": 109679,
+        "get_total": "240000.00",
+        "payments": []
+      }
+    ],
+    "products": [
+      {
+        "id": 22943,
+        "name": "Aprob. 953630 Cancela Multa Nro. DH-DAL-266-/2019",
+        "price": "10000.00",
+        "image": "",
+        "created": "2020-04-25T00:12:23.795762-04:00",
+        "updated": "2020-04-25T00:12:23.795774-04:00",
+        "stock": 1
+      },
+      {
+        "id": 2052303,
+        "name": "Declaración #12712 | IV TRIMESTRE 2019 INVERSIONES LA MONTANITA 1707 CA",
+        "price": "226204.61",
+        "image": "",
+        "created": "2020-05-29T12:26:16.035605-04:00",
+        "updated": "2020-05-29T12:27:13.758231-04:00",
+        "stock": 1
+      },
+      {
+        "id": 2052306,
+        "name": "Declaración #12712 | IV TRIMESTRE 2019 INVERSIONES LA MONTANITA 1707 CA",
+        "price": "226204.61",
+        "image": "",
+        "created": "2020-05-29T14:36:31.206895-04:00",
+        "updated": "2020-05-29T14:52:15.671894-04:00",
+        "stock": 1
+      },
+      {
+        "id": 2052307,
+        "name": "Declaración #12712 | IV TRIMESTRE 2019 INVERSIONES LA MONTANITA 1707 CA",
+        "price": "226204.61",
+        "image": "",
+        "created": "2020-05-29T14:55:10.665146-04:00",
+        "updated": "2020-05-29T14:55:44.096284-04:00",
+        "stock": 1
+      },
+      {
+        "id": 2052302,
+        "name": "Declaración #9498 | I TRIMESTRE 2019 INVERSIONES LA MONTANITA 1707 CA",
+        "price": "452031.93",
+        "image": "",
+        "created": "2020-05-29T12:22:07.471618-04:00",
+        "updated": "2020-05-29T12:23:09.395665-04:00",
+        "stock": 1
+      }
+    ]
+  }
+}

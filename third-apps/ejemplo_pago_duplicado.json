@@ -1,0 +1,87 @@
+{
+    "res": 0,
+    "message": "Orden 2051910 has a payment registered",
+    "order": {
+      "id": 2051910,
+      "items": [
+        {
+          "id": 2051982,
+          "product": {
+            "id": 2052197,
+            "name": "Declaraci\u00f3n #2051196 | I TRIMESTRE 2019 None",
+            "price": "145157.11",
+            "image": null,
+            "created": "2020-05-30T08:24:58.465500-04:00",
+            "updated": "2020-05-30T08:26:51.907787-04:00",
+            "stock": 0
+          },
+          "price": "145157.110000",
+          "quantity": 1,
+          "order": 2051910
+        },
+        {
+          "id": 2051983,
+          "product": {
+            "id": 2052198,
+            "name": "Declaraci\u00f3n #2051197 | II TRIMESTRE 2019 None",
+            "price": "109740.70",
+            "image": null,
+            "created": "2020-05-30T08:26:22.526699-04:00",
+            "updated": "2020-05-30T08:28:50.953076-04:00",
+            "stock": 0
+          },
+          "price": "172740.700000",
+          "quantity": 1,
+          "order": 2051910
+        }
+      ],
+      "customer": {
+        "id": 2,
+        "name": "Alcald\u00eda de Guaicaipuro",
+        "description": "Alcald\u00eda del municipio Guaicaipuro",
+        "logo": "/media/customers/logo/Guaicaipuro-Icono.png",
+        "header": "/media/Splash-header.jpg",
+        "icon": "/media/Guaicaipuro-Icono.png",
+        "shortname": "Guaicaipuro",
+        "is_active": true
+      },
+      "insurance": "0.000000",
+      "handling_fee": "0.000000",
+      "discount": "0.000000",
+      "state": "completed",
+      "created": "2020-05-30T08:26:51.820918-04:00",
+      "updated": "2020-05-30T16:27:46.329451-04:00",
+      "paid": true,
+      "pending_balance": "0.000000",
+      "owner": 1096791,
+      "get_total": "317897.81",
+      "payments": [
+        {
+          "id": 2051861,
+          "owner": {
+            "id": 1096791,
+            "get_full_name": "Marina Esposito",
+            "dob": "1983-06-03",
+            "gender": "female",
+            "is_active": true,
+            "suspended": false
+          },
+          "reference": "ABC32456",
+          "channel": "online",
+          "amount": "317897.81",
+          "admin": {
+            "id": 2050641,
+            "get_full_name": "CLIENT EXTERNAL",
+            "dob": "2020-05-01",
+            "gender": "male",
+            "is_active": true,
+            "suspended": false
+          },
+          "state": "approved",
+          "created": "2020-05-30T16:27:46.317585-04:00",
+          "updated": "2020-05-30T16:27:46.317597-04:00"
+        }
+      ]
+    },
+    "code": "101004"
+  }
