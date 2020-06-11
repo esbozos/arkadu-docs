@@ -11,7 +11,7 @@ def get_order_for_doc(doc_id):
         ser agregados para crear una nueva orden.
     """
 
-    url = "https://arkadu.com/api/shop/order/get/"
+    url = "https://old.arkadu.com/api/shop/order/get/"
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC"

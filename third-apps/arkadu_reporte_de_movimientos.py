@@ -9,7 +9,7 @@ def report_movements():
         Registra los movimientos y balance actual de cuenta
     """
 
-    url = "https://arkadu.com/api/shop/account/report/"
+    url = "https://old.arkadu.com/api/shop/account/report/"
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC"

@@ -9,7 +9,7 @@ def create_order():
        crea una nueva orden con 1 o más productos disponibles para el usuario
     """
 
-    url = "https://arkadu.com/api/shop/order/create/"
+    url = "https://old.arkadu.com/api/shop/order/create/"
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC"

@@ -179,6 +179,9 @@
 que extiendan las funciones o interactúen con la plataforma.</p>
 <p>Para ello el administrador con privilegios de super usuario debe crear las credenciales de
 las Aplicaciones.</p>
+<blockquote>
+<div><p><strong>TEMPORALMENTE EL API ESTARÁ SIRVIENDO EN LA URL https://old.arkadu.com</strong></p>
+</div></blockquote>
 <div class="section" id="registrar-aplicaciones-de-terceros">
 <h1>Registrar Aplicaciones de Terceros<a class="headerlink" href="#registrar-aplicaciones-de-terceros" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>Existen varias formas para registrar una nueva aplicación, la primera de ellas es a través del panel administrativo de django. Allí encontraremos <strong>Oauth Provider</strong> y a continuación seguiremos el vínculo de agregar nueva aplicación.</p>
@@ -279,7 +282,7 @@ de pago en el sistema.</p>
 <span class="sd">        ser agregados para crear una nueva orden.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://arkadu.com/api/shop/order/get/&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://old.arkadu.com/api/shop/order/get/&quot;</span>
     <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
         <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC&quot;</span>
@@ -459,7 +462,7 @@ le pertenecen directamente al usuario consultado.</p>
 <span class="sd">        Registra el pago de una orden.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://arkadu.com/api/shop/order/pay/&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://old.arkadu.com/api/shop/order/pay/&quot;</span>
     <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
         <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC&quot;</span>
@@ -634,7 +637,7 @@ por el servicio de recaudación.</p>
 <span class="sd">        Registra los movimientos y balance actual de cuenta</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://arkadu.com/api/shop/account/report/&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://old.arkadu.com/api/shop/account/report/&quot;</span>
     <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
         <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC&quot;</span>
@@ -697,7 +700,7 @@ elegir productos individualers y viceversa.</p>
 <span class="sd">       crea una nueva orden con 1 o más productos disponibles para el usuario</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://arkadu.com/api/shop/order/create/&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://old.arkadu.com/api/shop/order/create/&quot;</span>
     <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
         <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC&quot;</span>
@@ -783,7 +786,7 @@ debemos hacer un request al API de la siguiente manera:</p>
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://arkadu.comapi/user/access/get-token/&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://old.arkadu.comapi/user/access/get-token/&quot;</span>
     <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span>
     <span class="p">}</span>

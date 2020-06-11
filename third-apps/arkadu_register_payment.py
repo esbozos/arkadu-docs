@@ -9,7 +9,7 @@ def register_payment():
         Registra el pago de una orden.
     """
 
-    url = "https://arkadu.com/api/shop/order/pay/"
+    url = "https://old.arkadu.com/api/shop/order/pay/"
     headers = {
         "Content-Type": "application/json",
         "Authorization": "Bearer vUQzaKhCo9LpPfBAeAetUFQvv24ioC"

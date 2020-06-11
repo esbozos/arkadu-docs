@@ -11,7 +11,7 @@ def renew_token():
 
     """
 
-    url = "https://arkadu.comapi/user/access/get-token/"
+    url = "https://old.arkadu.comapi/user/access/get-token/"
     headers = {
         "Content-Type": "application/json"
     }

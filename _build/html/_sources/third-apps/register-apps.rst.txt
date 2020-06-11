@@ -7,6 +7,9 @@ que extiendan las funciones o interactúen con la plataforma.
 Para ello el administrador con privilegios de super usuario debe crear las credenciales de
 las Aplicaciones.
 
+
+    **TEMPORALMENTE EL API ESTARÁ SIRVIENDO EN LA URL https://old.arkadu.com**
+
 ==================================
 Registrar Aplicaciones de Terceros
 ==================================
